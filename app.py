@@ -127,7 +127,7 @@ REGLAS IMPORTANTES:
     # --- Llamada a la API ---
     try:
         respuesta = client.chat.completions.create(
-            model="meta-llama/llama-3.1-8b-instruct:free",
+            model="openrouter/auto",
             messages=mensajes_api
         )
         texto = respuesta.choices[0].message.content
